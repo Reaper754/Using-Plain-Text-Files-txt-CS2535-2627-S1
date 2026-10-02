@@ -19,8 +19,7 @@ with open ("checksum_results", "w") as file:
                 temp_high = test_num
             elif int(test_num) < int(temp_low):
                 temp_low = test_num
-        if i == 3:
-            add = int(temp_high) - int(temp_low)
-            total += add
-            file.write(str(add) + "\n")
+        add = int(temp_high) - int(temp_low)
+        total += add
+        file.write(str(add) + "\n")
     file.write("checksum total: " + str(total))
