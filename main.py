@@ -1,9 +1,9 @@
-with open("checksum_sample", "r") as file:
+with open("checksum_sample.txt", "r") as file:
     nums = file.readlines()
 
 total = 0
 
-with open ("checksum_results", "w") as file:
+with open ("checksum_results.txt", "w") as file:
     for num in nums:
         num.strip()
         split_nums = num.split()
